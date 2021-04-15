@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h2>uma seleção especial de produtos</h2>
+    <h1>Especial para você</h1>
+    <p>Todos os produtos desta lista foram seleciondados a partir da sua navegação. Aproveite</p>
+    <nav>
+      <ul>
+        <li><a href="">Conheça o Unix</a></li>
+        <li><a href="">Ajude o Algoritmo</a></li>
+        <li><a href="">Seus Produtos</a></li>
+        <li><a href="">Compartilhe</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="container" id="area-cadastro">
+    <div id="cadastro-texto">
+      <h2 id="titulo-cadastro">Ajude o algoritmo a ser mais certeiro</h2>
+      <p class="texto-cadastro">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium consectetur. Praesent bibendum arcu risus, sit amet iaculis ex tempus quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod augue vel egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vel urna tortor. Vivamus et arcu non felis tristique eleifend. </p>
+      <p class="texto-cadastro">
+        Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.
+      </p>
+    </div>
+
+    <form name="cadastro" id="form-cadastro" action="">
+      <label name="nome" for="nome">Seu nome:</label>
+      <input class="input-cadastro" name="nome" type="text" id="nome" required pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" />
+      <span></span>
+      <label for=" email">E-mail:</label>
+      <input class="input-cadastro" name="email" type="email" id="email" required>
+      <span></span>
+      <label for="cpf">CPF:</label>
+      <input class="input-cadastro" name="cpf" type="number" id="cpf" required><br>
+      <span class="resultado-validacao"></span>
+      <div id="radios">
+
+        <input type="radio" name="sexo" value="Masculino" id="masculino">
+        <label for="masculino" class="label-inline">Masculino</label>
+        <input type="radio" name="sexo" value="Feminino" id="feminino">
+        <label for="feminino" class="label-inline">Feminino</label><br>
+        <span class="resultado-validacao"></span>
+      </div>
+      <button type="submit" id="btn-cadastro"> Enviar</button>
+    </form>
+
+  </section>
+  <main class="container">
+    <h2 id="titulo-sessao-produto" class="titulo-linhas">Sua seleção especial</h2>
+    <section id="sessao-produtos">
+    </section>
+    <button data-button="adicionar" id="btn-adicionar">Ainda mais produtos aqui</button>
+  </main>
+  <section class="container" id="sessao-amigo">
+    <h2 class="titulo-linhas">Compartilhe a novidade</h2>
+    <p>Quer que seus amigos também ganhem a lista personalizadas deles? Preencha agora ! </p>
+    <form name="amigo" action="" id="formulario-amigo">
+      <div>
+        <label for="nome-amigo">Nome do seu amigo:</label>
+        <input type="text" id="nome-amigo" name="nome-amigo" required pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"">
+      </div>
+      <div>
+        <label for=" email-amigo">E-mail:</label>
+        <input type="email" id="email-amigo" name="emailAmigo" required>
+
+      </div>
+
+    </form>
+    <button id="btn-amigo">Enviar agora</button>
+  </section>
+  <footer>
+    <p>Testando suas habilidades em HTML, CSS e JS.</p>
+    <p>Linx Impulse</p>
+    <p>2019</p>
+  </footer>
+  <script src="javaScript/script.js"></script>
+</body>
+
+</html>
